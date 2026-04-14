@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alquiler de Habitaciones</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Clientes</h2>
+
+  <label>Nombre:</label><br>
+  <input type="text" id="nombre"><br>
+
+  <label>Tipo de Habitación:</label><br>
+  <select id="tipo">
+    <option value="Individual">Individual</option>
+    <option value="Doble">Doble</option>
+    <option value="Suite">Suite</option>
+  </select><br>
+
+  <label>Días de Estadía:</label><br>
+  <input type="number" id="dias"><br>
+
+  <button onclick="agregarCliente()">Agregar</button>
+
+  <h3>Registros</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Subtotal</th>
+        <th>Impuesto</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="clientes"></p>
+  <p id="recaudado"></p>
+  <p id="masSolicitado"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
