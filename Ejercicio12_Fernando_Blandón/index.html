@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encomiendas</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Envíos</h2>
+
+  <label>Remitente:</label><br>
+  <input type="text" id="remitente"><br>
+
+  <label>Destino:</label><br>
+  <input type="text" id="destino"><br>
+
+  <label>Peso (kg):</label><br>
+  <input type="number" id="peso"><br>
+
+  <label>Tipo de Envío:</label><br>
+  <select id="tipo">
+    <option value="Normal">Normal</option>
+    <option value="Express">Express</option>
+    <option value="Urgente">Urgente</option>
+  </select><br>
+
+  <button onclick="agregarEnvio()">Agregar</button>
+
+  <h3>Envíos</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Remitente</th>
+        <th>Destino</th>
+        <th>Tipo</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalEnvios"></p>
+  <p id="totalRecaudado"></p>
+  <p id="tipoMas"></p>
+  <p id="masCostoso"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
