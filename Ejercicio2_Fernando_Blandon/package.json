@@ -1,0 +1,14 @@
+{
+  "name": "planilla-empleados",
+  "version": "1.0.0",
+  "description": "Sistema de planilla con cálculo de horas extra",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Fer",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}
