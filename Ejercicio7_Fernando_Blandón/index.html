@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedidos Restaurante</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Pedidos</h2>
+
+  <label>Cliente:</label><br>
+  <input type="text" id="cliente"><br>
+
+  <label>Producto:</label><br>
+  <input type="text" id="producto"><br>
+
+  <label>Cantidad:</label><br>
+  <input type="number" id="cantidad"><br>
+
+  <label>Precio Unitario:</label><br>
+  <input type="number" id="precio"><br>
+  <h4>si el subtotal es mayor a 500 se dara 10%</h4>
+
+  <button onclick="agregarPedido()">Agregar</button>
+
+  <h3>Pedidos</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Producto</th>
+        <th>Subtotal</th>
+        <th>Descuento</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalVendido"></p>
+  <p id="productoMas"></p>
+  <p id="clienteMayor"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
