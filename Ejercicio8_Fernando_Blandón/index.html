@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagos de Colegiatura</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Pagos</h2>
+
+  <label>Nombre del Estudiante:</label><br>
+  <input type="text" id="nombre"><br>
+
+  <label>Mensualidad:</label><br>
+  <input type="number" id="mensualidad"><br>
+
+  <label>Recargos:</label><br>
+  <input type="number" id="recargos"><br>
+
+  <label>Descuentos:</label><br>
+  <input type="number" id="descuentos"><br>
+
+  <button onclick="agregarPago()">Agregar</button>
+
+  <h3>Pagos</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Estudiante</th>
+        <th>Total a Pagar</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalRecaudado"></p>
+  <p id="totalDescuentos"></p>
+  <p id="mayor"></p>
+  <p id="menor"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "colegiatura-pagos",
+  "version": "1.0.0",
+  "description": "Sistema de pagos de colegiatura",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Fer",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}
