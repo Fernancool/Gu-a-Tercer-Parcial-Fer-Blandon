@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clínica - Registro de Pacientes</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Pacientes</h2>
+
+  <label>Nombre:</label><br>
+  <input type="text" id="nombre"><br>
+
+  <label>Edad:</label><br>
+  <input type="number" id="edad"><br>
+
+  <label>Tipo de Consulta:</label><br>
+  <select id="tipo">
+    <option value="General">General</option>
+    <option value="Especialista">Especialista</option>
+    <option value="Emergencia">Emergencia</option>
+  </select><br>
+
+  <button onclick="agregarPaciente()">Agregar</button>
+
+  <h3>Pacientes</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Tipo</th>
+        <th>Total a Pagar</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalPacientes"></p>
+  <p id="totalRecaudado"></p>
+  <p id="porTipo"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
