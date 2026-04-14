@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control de Producción</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Producción</h2>
+
+  <label>Nombre del Empleado:</label><br>
+  <input type="text" id="empleado"><br>
+
+  <label>Unidades Producidas:</label><br>
+  <input type="number" id="unidades"><br>
+
+  <label>Pago por Unidad:</label><br>
+  <input type="number" id="pagoUnidad"><br>
+
+  <button onclick="agregarProduccion()">Agregar</button>
+<h6>Bono: si produce más de 100 unidades → 20% extra</h6>
+  <h3>Producción</h3>
+
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Empleado</th>
+        <th>Unidades</th>
+        <th>Total a Pagar</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalPagado"></p>
+  <p id="mayor"></p>
+  <p id="menor"></p>
+  <p id="promedio"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
