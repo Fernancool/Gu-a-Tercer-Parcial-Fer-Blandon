@@ -1,0 +1,14 @@
+{
+  "name": "prestamos-biblioteca",
+  "version": "1.0.0",
+  "description": "Sistema de préstamos de biblioteca",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Fer",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}

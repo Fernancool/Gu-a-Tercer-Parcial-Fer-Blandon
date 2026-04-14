@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Préstamos de Biblioteca</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Préstamos</h2>
+
+  <label>Nombre del Estudiante:</label><br>
+  <input type="text" id="estudiante"><br>
+
+  <label>Libro:</label><br>
+  <input type="text" id="libro"><br>
+
+  <label>Días de Préstamo:</label><br>
+  <input type="number" id="dias"><br>
+
+  <label>Multa por Retraso:</label><br>
+  <input type="number" id="multa"><br>
+
+  <button onclick="agregarPrestamo()">Agregar</button>
+
+  <h3>Préstamos</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Estudiante</th>
+        <th>Libro</th>
+        <th>Total a Pagar</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalPrestamos"></p>
+  <p id="totalMultas"></p>
+  <p id="libroMas"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
