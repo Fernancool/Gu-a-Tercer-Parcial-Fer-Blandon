@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Matrícula Universitaria</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Matrícula</h2>
+
+  <label>Nombre del Estudiante:</label><br>
+  <input type="text" id="nombre"><br>
+
+  <label>Carrera:</label><br>
+  <input type="text" id="carrera"><br>
+
+  <label>Cantidad de Clases:</label><br>
+  <input type="number" id="clases"><br>
+
+  <label>Costo por Clase:</label><br>
+  <input type="number" id="costo"><br>
+
+  <button onclick="agregarEstudiante()">Agregar</button>
+
+  <h3>Matrículas</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Carrera</th>
+        <th>Subtotal</th>
+        <th>Descuento</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalEstudiantes"></p>
+  <p id="totalRecaudado"></p>
+  <p id="carreraMas"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
