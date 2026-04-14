@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ventas de Repuestos</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Ventas</h2>
+
+  <label>Repuesto:</label><br>
+  <input type="text" id="repuesto"><br>
+
+  <label>Precio:</label><br>
+  <input type="number" id="precio"><br>
+
+  <label>Cantidad:</label><br>
+  <input type="number" id="cantidad"><br>
+
+  <label>Tipo de Cliente:</label><br>
+  <select id="tipo">
+    <option value="Normal">Normal</option>
+    <option value="Frecuente">Frecuente</option>
+    <option value="Mayorista">Mayorista</option>
+  </select><br>
+
+  <button onclick="agregarVenta()">Agregar</button>
+
+  <h3>Ventas</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Repuesto</th>
+        <th>Tipo Cliente</th>
+        <th>Subtotal</th>
+        <th>Descuento</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalVendido"></p>
+  <p id="mayorIngreso"></p>
+  <p id="totalDescuentos"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
