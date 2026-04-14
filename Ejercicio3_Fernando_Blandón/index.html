@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control de Inventario</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Productos</h2>
+
+  <label>Nombre:</label><br>
+  <input type="text" id="nombre"><br>
+
+  <label>Categoría:</label><br>
+  <input type="text" id="categoria"><br>
+
+  <label>Precio de Compra:</label><br>
+  <input type="number" id="precioCompra"><br>
+
+  <label>Precio de Venta:</label><br>
+  <input type="number" id="precioVenta"><br>
+
+  <label>Cantidad:</label><br>
+  <input type="number" id="cantidad"><br>
+
+  <button onclick="agregarProducto()">Agregar</button>
+
+  <h3>Inventario</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Valor Total</th>
+        <th>Ganancia Potencial</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalInventario"></p>
+  <p id="gananciaTotal"></p>
+  <p id="mayorProducto"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
