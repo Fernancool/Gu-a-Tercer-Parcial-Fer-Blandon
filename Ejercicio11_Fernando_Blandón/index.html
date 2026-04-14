@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Servicios Técnicos</title>
+  <link rel="stylesheet" href="Fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Servicios</h2>
+
+  <label>Nombre del Cliente:</label><br>
+  <input type="text" id="cliente"><br>
+
+  <label>Tipo de Servicio:</label><br>
+  <input type="text" id="servicio"><br>
+
+  <label>Costo Base:</label><br>
+  <input type="number" id="costo"><br>
+
+  <label>Recargo por Urgencia:</label><br>
+  <input type="number" id="recargo"><br>
+
+  <button onclick="agregarServicio()">Agregar</button>
+
+  <h3>Servicios</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Servicio</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="totalServicios"></p>
+  <p id="totalRecaudado"></p>
+  <p id="servicioMas"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
