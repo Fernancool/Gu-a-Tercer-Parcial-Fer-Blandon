@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Estudiantes</title>
+  <link rel="stylesheet" href="fondo.css">
+</head>
+<body>
+
+  <h2>Registro de Estudiantes</h2>
+
+  <label>Nombre:</label><br>
+  <input type="text" id="nombre"><br>
+
+  <label>Nota 1:</label><br>
+  <input type="number" id="nota1"><br>
+
+  <label>Nota 2:</label><br>
+  <input type="number" id="nota2"><br>
+
+  <label>Nota 3:</label><br>
+  <input type="number" id="nota3"><br>
+
+  <button onclick="agregarEstudiante()">Agregar</button>
+
+  <h3>Lista de Estudiantes</h3>
+
+  <table border="1" id="tabla">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Promedio</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Resultados</h3>
+  <p id="promedioGeneral"></p>
+  <p id="mayor"></p>
+  <p id="menor"></p>
+  <p id="aprobados"></p>
+  <p id="reprobados"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
